@@ -54,7 +54,7 @@ This application features user authentication, real-time communication using Soc
    ```
    npm run dev
    ```
-   The frontend will be available at http://localhost:5173.
+   The frontend will be available at http://localhost:3000.
 
 ### Backend Setup
 
