@@ -1,0 +1,70 @@
+/* Custom Navbar Styling */
+.custom-navbar {
+  background-color: #283618; /* Dark green background color */
+  padding: 15px 30px; /* Increased padding for a more spacious navbar */
+  border-bottom: 2px solid #1b3a2f; /* Bottom border for a stylish look */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Brand Styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem; /* Increased font size */
+  color: #f4a261; /* Coral color for the brand */
+  font-weight: bold;
+  margin-right: auto; /* Align to the left */
+  text-transform: uppercase; /* Transform text to uppercase */
+}
+
+/* Navigation Links Styling */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.nav-links .nav-link {
+  color: #e9c46a !important; /* Muted yellow color for the links */
+  font-size: 1.1rem; /* Slightly larger font size */
+  margin-right: 25px;
+  transition: color 0.3s ease; /* Smooth color transition */
+  text-transform: capitalize; /* Capitalize each link */
+}
+
+.nav-links .nav-link:hover {
+  color: #f4a261 !important; /* Coral color on hover */
+}
+
+/* Login Button Styling */
+.login-button {
+  background-color: #f4a261; /* Coral background color */
+  border: none;
+  color: #283618; /* Dark green text color */
+  font-size: 1rem;
+  padding: 8px 20px;
+  margin-left: 20px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.login-button:hover {
+  background-color: #e76f51; /* Darker coral on hover */
+  color: white; /* White text on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .navbar-collapse {
+      padding: 10px;
+  }
+
+  .nav-links .nav-link {
+      margin-right: 0;
+      padding: 10px 0;
+      text-align: center;
+  }
+
+  .login-button {
+      margin: 10px 0 0 0;
+      width: 100%;
+  }
+}

@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern sans-serif font */
+  background-color: #f0f2f5; /* Light background color for better readability */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Standard dark grey for text */
+}
+
+/* Flexbox Utility Class */
+.d-flex {
+  display: flex;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 240px; /* Increased width for better spacing */
+  padding-top: 30px; /* Increased padding for better structure */
+  padding-left: 15px;
+  height: 100vh; /* Full viewport height */
+  background-color: #343a40; /* Dark background for sidebar */
+  color: #fff; /* White text for better contrast */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: fixed; /* Fixed position for always visible sidebar */
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px; /* Updated padding for better touch targets */
+  font-size: 1.1rem;
+  color: #ced4da; /* Lighter grey for a softer look */
+  border-radius: 5px; /* Rounded corners for modern look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.sidebar .nav-link:hover {
+  background-color: #495057; /* Slightly darker shade for hover effect */
+  color: #f8f9fa; /* Light color on hover */
+}
+
+.sidebar .nav-link .fa {
+  margin-right: 15px; /* Increased spacing for better alignment */
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  margin-left: 240px; /* Matches the sidebar width */
+  padding: 30px; /* Increased padding for spacing */
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  min-height: 100vh; /* Ensures it covers full viewport height */
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 20px;
+  border: none; /* Removed border for cleaner look */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  border-radius: 10px; /* Rounded corners for modern look */
+  background-color: #ffffff; /* White background for card */
+}
+
+.card-body {
+  padding: 25px; /* Increased padding for spacing */
+}
+
+/* Circle Chart Styles */
+.circle-chart {
+  width: 120px; /* Increased size for better visibility */
+  height: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%; /* Ensures a perfect circle */
+  background-color: #6c757d; /* Dark grey background for better contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* White text color */
+  font-size: 1.5rem; /* Larger text for emphasis */
+}
+
+/* Performance Breakdown and Button Styles */
+.performance-breakdown p,
+.play-mode button {
+  margin: 12px 0;
+  font-size: 1rem; /* Standardized font size */
+}
+
+.play-mode button {
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text for contrast */
+  border: none; /* Removed border for cleaner look */
+  padding: 10px 20px; /* Comfortable padding for touch targets */
+  border-radius: 8px; /* Rounded corners for modern look */
+  cursor: pointer; /* Cursor pointer for better UX */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.play-mode button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Responsive styles for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Adjusted width for smaller screens */
+    padding-top: 20px;
+  }
+  
+  .main-content {
+    margin-left: 200px; /* Matches the adjusted sidebar width */
+    padding: 15px; /* Adjusted padding for smaller screens */
+  }
+  
+  .circle-chart {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .play-mode button {
+    padding: 8px 16px; /* Smaller padding for buttons */
+  }
+}

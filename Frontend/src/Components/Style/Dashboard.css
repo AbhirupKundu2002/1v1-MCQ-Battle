@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated font for a modern look */
+    background-color: #f4f7fc; /* Soft background color for better readability */
+    color: #333; /* Primary font color for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Headline Style */
+.dashboard-headline {
+    font-family: 'Poppins', sans-serif; /* Bold and modern font */
+    font-size: 32px; /* Increased font size for better emphasis */
+    color: #4a90e2; /* Changed to a softer blue */
+    text-decoration: none; /* Removed underline for cleaner look */
+    text-align: center;
+    margin-bottom: 25px; /* Increased margin for better spacing */
+    font-weight: 600; /* Enhanced weight for emphasis */
+}
+
+/* Text Style */
+.dashboard-data-text {
+    font-family: 'Roboto', sans-serif; /* Consistent font choice */
+    font-size: 16px; /* Updated to be more readable */
+    font-weight: 500; /* Semi-bold for emphasis */
+    color: #5a5a5a; /* A balanced grey color */
+    margin-bottom: 10px; /* Added margin for spacing */
+}
+
+/* Button Styles */
+.dashboard-button {
+    font-family: 'Poppins', sans-serif; /* Consistent modern font */
+    font-size: 16px;
+    color: #ffffff; /* White text for contrast */
+    background-color: #4a90e2; /* Soft blue for a calm feel */
+    border: none; /* Removed border for a cleaner look */
+    padding: 12px 24px; /* Comfortable padding for touch targets */
+    border-radius: 8px; /* More rounded edges for modern appeal */
+    cursor: pointer; /* Cursor pointer for better UX */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.dashboard-button:hover {
+    background-color: #357ABD; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+/* Responsive styles for small devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .dashboard-data-text {
+        font-size: 14px; /* Adjusted for smaller screens */
+    }
+    .dashboard-headline {
+        font-size: 26px; /* Adjusted for smaller screens */
+    }
+    .dashboard-button {
+        font-size: 14px; /* Adjusted button text size */
+        padding: 10px 18px; /* Adjusted padding */
+    }
+}
+
+/* Responsive styles for medium devices (min-width: 768px) and (max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard-data-text {
+        font-size: 15px; /* Slightly larger for medium screens */
+    }
+    .dashboard-headline {
+        font-size: 28px; /* Adjusted for medium screens */
+    }
+    .dashboard-button {
+        font-size: 15px; /* Slightly larger button text size */
+        padding: 11px 22px; /* Adjusted padding */
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+  background: linear-gradient(to right, #283618, #2d6a4f); /* Dark green gradient */
+  padding: 20px 0;
+  color: white;
+}
+
+.footer h5 {
+  font-weight: bold;
+  color: #e5e5e5; /* Light grey color for better contrast */
+}
+
+#back-to-top {
+  margin-top: 20px;
+  background-color: #2d6a4f; /* Match with gradient's lighter green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+  background-color: #1b3a2f; /* Darker green for hover effect */
+}
+
+@media (max-width: 768px) {
+  .footer {
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
