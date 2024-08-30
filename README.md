@@ -4,7 +4,7 @@ This project is a real-time multiplayer quiz game application built with a React
 
 ## Project Description
 
-This application features user authentication, real-time communication using Socket.IO, and a RESTful API for managing users, questions, and games. Players can join game rooms, participate in real-time quizzes, and interact with other players.
+This application features user authentication, real-time communication using Socket.IO, and a REST API for managing users, questions, and games. Players can join game rooms, participate in real-time quizzes, and interact with other players.
 
 ## Key Features
 
